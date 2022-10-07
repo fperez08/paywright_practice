@@ -1,0 +1,11 @@
+{
+  "name": "playwright_practice",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/fperez08/playwright_practice.git",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.26.1"
+  },
+  "scripts": {}
+}
