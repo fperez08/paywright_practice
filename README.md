@@ -3,7 +3,7 @@
 -   [Introduction](#introduction)
 -   [Installation](#installation)
 -   [Getting started](#getting-started)
--   [Generate JSdoc documentation](#generate-jsdoc-documentation)
+-   [Generate project documentation](#generate-project-documentation)
 
 ## Introduction
 
@@ -31,7 +31,7 @@ yarn playwright test --grep @example
 To run more test using de command line take a look at the Playwright documentation: [Command line
 ](https://playwright.dev/docs/test-cli)
 
-## Generate JSdoc documentation
+## Generate project documentation
 
 To get JSdoc of the project run the following command:
 
