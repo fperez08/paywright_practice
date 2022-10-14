@@ -1,7 +1,7 @@
 /**
- * Register Page Web Elements
+ * Login Page Web Elements
  */
-exports.RegisterPageContent = class RegisterPageContent {
+exports.LoginPageContent = class LoginPageContent {
     /**
      * Initialize the web elements and the page.
      *
@@ -9,12 +9,11 @@ exports.RegisterPageContent = class RegisterPageContent {
      */
     constructor(page) {
         this.page = page;
-        this.userNameInput = page.locator("[placeholder='Username']");
         this.emailInput = page.locator("[placeholder='Email']");
         this.passwordInput = page.locator("[placeholder='Password']");
-        this.signUpButton = page.locator("button:has-text('Sign up')");
-        this.signUpLabel = page.locator("h1:has-text('Sign up')");
+        this.signInButton = page.locator("button:has-text('Sign in')");
+        this.signInLabel = page.locator("h1:has-text('Sign in')");
         this.errorMessage = page.locator("ul.error-messages >> li");
-        this.haveAnAccountLink = page.locator("text=Have an account?");
+        this.needAnAccountLink = page.locator("text=Need an account?");
     }
 };

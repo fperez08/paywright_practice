@@ -8,6 +8,9 @@ const {
     UserHomePageContent,
 } = require("$/src/page_content/user_home_content.js");
 
+const { LoginPage } = require("$/src/pages/login_page.js");
+const { LoginPageContent } = require("$/src/page_content/login_content.js");
+
 exports.test = base.test.extend({
     registerPage: async ({ page }, use) => {
         const registerPage = new RegisterPage(new RegisterPageContent(page));
@@ -16,6 +19,10 @@ exports.test = base.test.extend({
     userHomePage: async ({ page }, use) => {
         const userHomePage = new UserHomePage(new UserHomePageContent(page));
         await use(userHomePage);
+    },
+    loginPage: async ({ page }, use) => {
+        const loginPage = new LoginPage(new LoginPageContent(page));
+        await use(loginPage);
     },
 });
 

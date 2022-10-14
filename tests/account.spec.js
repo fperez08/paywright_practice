@@ -43,4 +43,12 @@ test.describe("Sign Up", () => {
             "password can't be blank"
         );
     });
+
+    test("have an account should navigate to Sign In", async ({
+        registerPage,
+        loginPage,
+    }) => {
+        await registerPage.clickOnHaveAnAccount();
+        await expect(loginPage.content.signInLabel).toBeVisible();
+    });
 });

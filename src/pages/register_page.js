@@ -11,13 +11,14 @@ exports.RegisterPage = class RegisterPage {
      */
     constructor(registerContent) {
         this.content = registerContent;
+        this.path = "#/register";
     }
 
     /**
      * Navigate to the register page.
      */
     async navigate() {
-        await this.content.page.goto(this.content.path);
+        await this.content.page.goto(this.path);
         await expect(this.content.signUpLabel).toHaveText("Sign up");
     }
 
@@ -58,5 +59,12 @@ exports.RegisterPage = class RegisterPage {
     async createAccount(user) {
         await this.fillRegistrationForm(user);
         await this.clickOnSigUp();
+    }
+
+    /**
+     * Click on have an account link.
+     */
+    async clickOnHaveAnAccount() {
+        await this.content.haveAnAccountLink.click();
     }
 };
