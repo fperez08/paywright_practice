@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@faker-js/faker@^7.6.0":
+  version "7.6.0"
+  resolved "https://registry.yarnpkg.com/@faker-js/faker/-/faker-7.6.0.tgz#9ea331766084288634a9247fcd8b84f16ff4ba07"
+  integrity sha512-XK6BTq1NDMo9Xqw/YkYyGjSsg44fbNwYRx7QK2CuoQgyy+f1rrTDHoExVM5PsyXCtfl2vs2vVJ0MN0yN6LppRw==
+
 "@playwright/test@^1.26.1":
   version "1.26.1"
   resolved "https://registry.yarnpkg.com/@playwright/test/-/test-1.26.1.tgz#73ada4e70f618bca69ba7509c4ba65b5a41c4b10"
@@ -14,6 +19,11 @@
   version "18.8.3"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-18.8.3.tgz#ce750ab4017effa51aed6a7230651778d54e327c"
   integrity sha512-0os9vz6BpGwxGe9LOhgP/ncvYN5Tx1fNcd2TM3rD/aCGBkysb+ZWpXEocG24h6ZzOi13+VB8HndAQFezsSOw1w==
+
+basetag@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/basetag/-/basetag-2.1.0.tgz#9c42af8379778abe7fd44daa31417322a82ccedd"
+  integrity sha512-L77Q5OAAWEBxLxi8ExqZVJZ9BqzWq6tyq2QlFYKK2o2cI9l/HUk1KjowjLt3GB72Nchg+jV6ztiQT6agPy4quw==
 
 playwright-core@1.26.1:
   version "1.26.1"

@@ -1,11 +1,15 @@
 {
-  "name": "playwright_practice",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "https://github.com/fperez08/playwright_practice.git",
-  "license": "MIT",
-  "devDependencies": {
-    "@playwright/test": "^1.26.1"
-  },
-  "scripts": {}
+    "name": "playwright_practice",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "https://github.com/fperez08/playwright_practice.git",
+    "license": "MIT",
+    "devDependencies": {
+        "@faker-js/faker": "^7.6.0",
+        "@playwright/test": "^1.26.1",
+        "basetag": "^2.1.0"
+    },
+    "scripts": {
+        "postinstall": "npx basetag link"
+    }
 }
