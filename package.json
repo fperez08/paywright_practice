@@ -11,6 +11,7 @@
         "jsdoc": "^3.6.11"
     },
     "scripts": {
-        "postinstall": "npx basetag link"
+        "postinstall": "npx basetag link",
+        "jsdoc": "./node_modules/.bin/jsdoc src/ -r -d docs"
     }
 }
