@@ -1,4 +1,12 @@
+/**
+ * Register Page Web Elements
+ */
 exports.RegisterPageContent = class RegisterPageContent {
+    /**
+     * Initialize the web elements and the page.
+     *
+     * @param {Object} page - Browser page.
+     */
     constructor(page) {
         this.page = page;
         this.path = "#/register";
