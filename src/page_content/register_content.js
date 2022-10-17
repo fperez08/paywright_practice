@@ -14,7 +14,6 @@ exports.RegisterPageContent = class RegisterPageContent {
         this.passwordInput = page.locator("[placeholder='Password']");
         this.signUpButton = page.locator("button:has-text('Sign up')");
         this.signUpLabel = page.locator("h1:has-text('Sign up')");
-        this.errorMessage = page.locator("ul.error-messages >> li");
         this.haveAnAccountLink = page.locator("text=Have an account?");
     }
 };
