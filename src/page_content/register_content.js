@@ -1,11 +1,12 @@
 /**
  * Register Page Web Elements
+ * @module page_content/register_content
  */
 exports.RegisterPageContent = class RegisterPageContent {
     /**
-     * Initialize the web elements and the page.
+     * Initialize the content of Register page.
      *
-     * @param {Object} page - Browser page.
+     * @param {import('@playwright/test').Page} page - Browser page.
      */
     constructor(page) {
         this.page = page;

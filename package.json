@@ -8,10 +8,12 @@
         "@faker-js/faker": "^7.6.0",
         "@playwright/test": "^1.26.1",
         "basetag": "^2.1.0",
-        "jsdoc": "^3.6.11"
+        "clean-jsdoc-theme": "^4.1.8",
+        "jsdoc": "^3.6.11",
+        "jsdoc-tsimport-plugin": "^1.0.5"
     },
     "scripts": {
         "postinstall": "npx basetag link",
-        "jsdoc": "./node_modules/.bin/jsdoc src/ -r -d docs"
+        "jsdoc": "jsdoc -c jsdoc.conf.json -r"
     }
 }

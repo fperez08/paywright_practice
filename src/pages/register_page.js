@@ -2,12 +2,13 @@ const { expect } = require("@playwright/test");
 
 /**
  * Register Page Object Model
+ * @module pages/register_page
  */
 exports.RegisterPage = class RegisterPage {
     /**
      * Initialize the content of the register page.
      *
-     * @param {Object} registerContent - RegisterPageContent
+     * @param {module:page_content/register_content} registerContent - Instance of Register content class
      */
     constructor(registerContent) {
         this.content = registerContent;
@@ -25,12 +26,7 @@ exports.RegisterPage = class RegisterPage {
     /**
      * Fill the form to register a new user.
      *
-     * @param {Object} user - User object in the format:
-     *                   {
-     *                    user_name:string,
-     *                    email:string,
-     *                    password:string
-     *                    }
+     * @param {module:base/models~User} user - User information
      */
     async fillRegistrationForm(user) {
         const { user_name, email, password } = user;
@@ -49,12 +45,7 @@ exports.RegisterPage = class RegisterPage {
     /**
      * Creates an account with the given user.
      *
-     * @param {Object} user - User object in the format:
-     *                   {
-     *                    user_name:string,
-     *                    email:string,
-     *                    password:string
-     *                    }
+     * @param {module:base/models~User} user - User information
      */
     async createAccount(user) {
         await this.fillRegistrationForm(user);
